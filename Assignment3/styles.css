@@ -1,0 +1,46 @@
+body{
+    background: linear-gradient(90deg, burlywood, rgb(125, 175, 125));
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.heading-container{
+    background: linear-gradient(180deg, rgb(125, 175, 125), burlywood);
+    border:3px solid black;
+    border-radius: 10px;
+}
+h1{
+    color:rgb(82, 249, 101);
+    text-shadow: 5px 3px 3px black;
+    text-align: center;
+}
+.paragraph-container{
+    background-color: rgb(136, 113, 83);
+    padding: 10px;
+    border:3px solid black;
+    border-radius: 10px;
+}
+
+.interactive-image{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+button{
+    padding: 5px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    background-color: rgb(125, 175, 125);
+    animation:reverse;
+}
+button:hover{
+    transform: scale(1.5);
+    color: chartreuse;
+}
+button:active{
+    transform:translateY(10px);
+}
+
+img{
+    padding:10px;
+}
