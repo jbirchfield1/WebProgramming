@@ -2,7 +2,7 @@
 
 let output = document.getElementById("output");
 
-// 1. Arrow function
+// 1. Arrow Function
 
 document.getElementById("arrowButton").addEventListener("click", () =>{
     const greet = name => 'Hello, '+name+'!';
