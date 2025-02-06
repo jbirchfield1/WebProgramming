@@ -9,6 +9,7 @@
     <script>
         function generateEmail(form){
             document.getElementById("email").innerHTML = form.elements["first"].value + "." + form.elements["last"].value + "@atu.edu";
+            form.reset();
         }
     </script>
 </head>
