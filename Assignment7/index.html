@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Joshua Birchfield">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form>
+        Name: <input type="text" id="name" placeholder="Enter Name Here"><br>
+        Email: <input type="email" id="email" placeholder="Enter your Email Here"><br>
+        Password: <input type="password" id="pword" placeholder="Enter your Password Here"><br>
+        Age: <input type="number" id="age" placeholder="Enter Age Here"><br>
+        Gender: Male<input type="radio" id="male" value="Male" name="gender"> Female<input type="radio" id="female" value="Female" name="gender"><br>
+        Country: <select id="country">
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Japan">Japan</option>
+            <option value="Russia">Russia</option>
+            <option value="Mexico">Mexico</option>
+        </select>
+        <br>
+        Do you Agree to the Terms and Conditions? Yes<input type="checkbox" id="TandC" value="Yes"><br>
+        <input type="button" id="submitButton" value="Submit" onclick="submitForm(this.form)">
+
+        <p id="results">
+
+        </p>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
