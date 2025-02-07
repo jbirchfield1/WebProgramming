@@ -6,6 +6,8 @@ body{
 form{
     background-color: rgb(222, 249, 216);
     border-radius: 5px;
+    margin:5px;
+    line-height: 1.5;
 }
 
 input[type=text], input[type=email], input[type=password], input[type=number]{
@@ -13,7 +15,13 @@ input[type=text], input[type=email], input[type=password], input[type=number]{
 }
 
 input[type=button]{
+    display: block;
     background-color: rgb(27, 209, 27);
+    font-size: 15px;
+    font-weight: bold;
     color: white;
     border-radius: 3px;
+    width: 100px;
+    height: 25px;
+    margin: 0 auto;
 }
