@@ -19,7 +19,11 @@ function validateForm(form){
         console.error("invalid email input");
         valid = false;
     }
-    if(age < 18 || age > 100){
+    if(age == ""){
+        document.getElementById("ageInput").style.backgroundColor = "red";
+        console.error("null age input");
+        valid = false;
+    }else if(age < 18 || age > 100){
         document.getElementById("ageInput").style.backgroundColor = "red";
         console.error("age outside of acceptable range");
         valid = false;
