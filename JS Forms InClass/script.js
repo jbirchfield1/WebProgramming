@@ -5,6 +5,9 @@ function validateForm(form){
     let age = document.forms["form1"]["age"].value;
     let emailTest = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     let valid = true;
+    document.getElementById("nameInput").style.backgroundColor = "";
+    document.getElementById("emailInput").style.backgroundColor = "";
+    document.getElementById("ageInput").style.backgroundColor = "";
     if(name == "" ){
         document.getElementById("nameInput").style.backgroundColor = "red";
         console.error("null name input");
@@ -34,9 +37,7 @@ function submitForm(form){
     if(validateForm(form)){
         document.getElementById("results").innerHTML = "Form Submitted Sucessfully!";
         form.reset();
-        document.getElementById("nameInput").style.backgroundColor = "";
-        document.getElementById("emailInput").style.backgroundColor = "";
-        document.getElementById("ageInput").style.backgroundColor = "";
+        
     }else{
         document.getElementById("results").innerHTML = "";
     }
