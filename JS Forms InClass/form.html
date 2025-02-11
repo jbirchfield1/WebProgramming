@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Joshua Birchfield">
+    <title>In Class Form Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form name="form1">
+        Name: <input type="text" id="nameInput" name="name" placeholder="Please Input Name Here.">
+        Email: <input type="text" id="emailInput" name="email" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+        Age: <input type="number" id="ageInput" name="age" min="18" max="100">
+        <input type="button" id="submitButton" onclick="submitForm(this.form)">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
