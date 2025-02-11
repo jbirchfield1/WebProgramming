@@ -36,5 +36,7 @@ function submitForm(form){
         document.getElementById("nameInput").style.backgroundColor = "";
         document.getElementById("emailInput").style.backgroundColor = "";
         document.getElementById("ageInput").style.backgroundColor = "";
+    }else{
+        document.getElementById("results").innerHTML = "";
     }
 }
