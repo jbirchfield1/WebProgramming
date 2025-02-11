@@ -35,7 +35,7 @@ function validateForm(form){
 }
 function submitForm(form){
     if(validateForm(form)){
-        document.getElementById("results").innerHTML = "Form Submitted Sucessfully!";
+        document.getElementById("results").innerHTML = "Form submitted successfully!";
         form.reset();
         
     }else{
