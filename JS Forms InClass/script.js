@@ -14,13 +14,12 @@ function validateForm(form){
         document.getElementById("emailInput").style.backgroundColor = "red";
         console.error("null email input");
         valid = false;
-    }
-    if(!emailTest.test(email)){
+    }else if(!emailTest.test(email)){
         document.getElementById("emailInput").style.backgroundColor = "red";
         console.error("invalid email input");
         valid = false;
     }
-    if(age<18 || age>100){
+    if(age < 18 || age > 100){
         document.getElementById("ageInput").style.backgroundColor = "red";
         console.error("age outside of acceptable range");
         valid = false;
