@@ -33,5 +33,6 @@ function submitForm(form){
     let age = document.forms["form1"]["age"].value;
     if(validateForm(form)){
         alert("Form Submitted Successfully!")
+        form.reset();
     }
 }
