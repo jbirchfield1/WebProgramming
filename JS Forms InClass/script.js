@@ -31,7 +31,10 @@ function submitForm(form){
     let email = document.forms["form1"]["email"].value;
     let age = document.forms["form1"]["age"].value;
     if(validateForm(form)){
-        alert("Form Submitted Successfully!")
+        document.getElementById("results").innerHTML = "Form Submitted Sucessfully!";
         form.reset();
+        document.getElementById("nameInput").style.backgroundColor = "";
+        document.getElementById("emailInput").style.backgroundColor = "";
+        document.getElementById("ageInput").style.backgroundColor = "";
     }
 }

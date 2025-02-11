@@ -8,11 +8,12 @@
 </head>
 <body>
     <form name="form1">
-        Name: <input type="text" id="nameInput" name="name" placeholder="Enter Name Here"><br>
-        Email: <input type="text" id="emailInput" name="email" placeholder="Enter Email Here"><br>
-        Age: <input type="number" id="ageInput" name="age" min="18" max="100" placeholder="Enter Age Here"><br>
+        Name: <input type="text" id="nameInput" name="name" placeholder="Enter Name Here" required><br>
+        Email: <input type="text" id="emailInput" name="email" placeholder="Enter Email Here" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"><br>
+        Age (between 18 and 100): <input type="number" id="ageInput" name="age" min="18" max="100" placeholder="Enter Age Here"><br>
         <input type="button" id="submitButton" onclick="submitForm(this.form)" value="Submit Form">
     </form>
+    <p id="results"></p>
     <script src="script.js"></script>
 </body>
 </html>
