@@ -1,4 +1,4 @@
-{
+[{
     "name": "Big Corporation",
     "numberOfEmployees": 1000,
     "CEO": "Mary",
@@ -9,4 +9,4 @@
     "numberOfEmployees": 10,
     "CEO": null,
     "rating": 4.3
-}
+}]
