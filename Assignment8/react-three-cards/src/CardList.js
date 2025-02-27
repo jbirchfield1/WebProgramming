@@ -8,6 +8,8 @@ const cards = [
     {title: "Card 3", content:"Third", color:"blue"},
   ]
 
+
+
   return(
         cards.map((card,index) => (
           <Card key={index}{...card}/>
