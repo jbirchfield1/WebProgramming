@@ -1,8 +1,13 @@
 body{
-  background-color:rgb(150, 245, 255);
-  font-family:'Times New Roman', Times, serif;
+  background: linear-gradient(180deg, rgb(15, 175, 255),rgb(30, 0, 105));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border: 5px solid midnightblue;
   border-radius: 10px;
+  max-width: 95%;
+  margin: auto;
+  margin-top: 20px;
 }
 
 button:hover{
