@@ -4,7 +4,8 @@ import {useState} from 'react';
 export default function MoodTracker(){
     const [mood, setMood] = useState("😊");
     const [song, setSong] = useState("");
-    const [story, setStory] = useState("")
+    const [story, setStory] = useState("");
+    const [link, setLink] = useState("");
 
     const VeryHappy = () =>{
         setMood(prevMood => "😂");
@@ -35,6 +36,7 @@ export default function MoodTracker(){
             <h1>Mood Tracker</h1>
             <p>Current Mood: {mood}</p>
             <p>Related Song: {song}</p>
+            <a href={link}>{link}</a>
             <p>Story: {story}</p>
             <button onClick={VeryHappy} style={{margin: "5px", padding:"10px", background:"lightgreen"}}> Very Happy </button>
             <button onClick={Bored} style={{margin: "5px", padding:"10px", background:"lightblue"}}> Unamused </button>
