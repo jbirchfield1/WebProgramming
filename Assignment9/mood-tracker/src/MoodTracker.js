@@ -6,7 +6,7 @@ export default function MoodTracker(){
     const [song, setSong] = useState("");
     const [story, setStory] = useState("");
     const [link, setLink] = useState("");
-    const [color, setColor] = useState("aquamarine");
+    const [color, setColor] = useState("Aqua");
 
     const VeryHappy = () =>{
         setMood("😂");
@@ -28,7 +28,7 @@ export default function MoodTracker(){
 
     const Upset = () =>{
         setMood("😭");
-        setColor("LightCyan")
+        setColor("LightSkyBlue")
         setSong("In the End - Linkin Park");
         setStory("One time I was really upset was during the county fair in my home town. I had worked all summer to make sure the goat that I was showing would be in top shape by exercising with it and monitoring its diet. On the day of showing the goat got sick though and did not perform well at the show becuase it would not stand in the required form.")
         setLink("https://youtu.be/eVTXPUF4Oz4")
@@ -53,7 +53,7 @@ export default function MoodTracker(){
             <p>Story: {story}</p>
             <button onClick={VeryHappy} style={{margin: "5px", padding:"10px", background:"LemonChiffon", borderRadius:5}}> Very Happy </button>
             <button onClick={Proud} style={{margin: "5px", padding:"10px", background:"LightGreen", borderRadius:5}}> Proud </button>
-            <button onClick={Upset} style={{margin: "5px", padding:"10px", background:"LightCyan", borderRadius:5}}> Upset </button>
+            <button onClick={Upset} style={{margin: "5px", padding:"10px", background:"LightSkyBlue", borderRadius:5}}> Upset </button>
             <button onClick={Angry} style={{margin: "5px", padding:"10px", background:"Tomato", borderRadius:5}}> Angry </button>
         </div>
     );
