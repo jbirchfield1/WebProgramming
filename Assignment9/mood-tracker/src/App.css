@@ -2,3 +2,7 @@ body{
   background-color:rgb(150, 245, 255);
   font-family:'Times New Roman', Times, serif;
 }
+
+button:hover{
+  scale:1.2;
+}
