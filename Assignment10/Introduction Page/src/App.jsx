@@ -7,11 +7,12 @@ function App() {
 
   return (
     <>
-    <div className='bg-blue-300 text-blue-950 rounded-xl font-mono'>
-      <header>
-        <h1 className='text-4xl'>Joshua Birchfield</h1>
+    <div className='bg-blue-300 text-blue-950 rounded-xl font-mono  max-w-full max-h-full'>
+      <header className='border-b-4'>
+        <h1 className='text-4xl '>Joshua Birchfield</h1>
         <h2 className='text-xl'>Senior Computer Science Student</h2>
         <h3 className='text-lg'>Arkansas Tech University</h3>
+        <img  className='w-40' src='/profile.jpg'></img>
       </header>
       <main className='mt-4'>
         <h3 className='text-lg'>Bio:</h3>
@@ -29,7 +30,7 @@ function App() {
       
       <footer className='bg-blue-400'>
         <p>Contact Info:</p>
-        <ul className='flex gap-3 ml-2'>
+        <ul className='flex flex-wrap gap-3 ml-2'>
           <li>Email: <a href="mailto:joshua.birchfield32@gmail.com" className='text-purple-900'>joshua.birchfield32@gmail.com</a></li>
           <li>Phone Number: (479) 530 - 9156</li>
           <li>X: <a href="https://x.com/JBirchfield32"className='text-purple-900'>Joshua Birchfield</a></li>
