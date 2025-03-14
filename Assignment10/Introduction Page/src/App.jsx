@@ -17,7 +17,7 @@ function App() {
       <main className='mt-4'>
         <div className='p-2'>
         <h3 className='text-lg font-bold'>Bio:</h3>
-        <p className='text-justify'>My name is Joshua Birchfield and I come from Huntsville, Arkansas. I grew an interest in Computer Science through a class in High School and a love for videogames. I love things that cause me to learn and challenge myself. I hope to make intuitive programs that make life a little more convenient.</p>
+        <p className='text-justify'>My name is Joshua Birchfield, and I come from Huntsville, Arkansas. I grew an interest in Computer Science through a class in High School and a love for videogames. I love things that cause me to learn and challenge myself regardless of subject. One of the ways I am challenging myself is by learning Japanese. Overall, I thoroughly enjoy programming, and I hope to make intuitive programs that make life a little more convenient.</p>
         </div>
 
         <div className='p-2 mt-4'>
@@ -25,7 +25,8 @@ function App() {
           <ul className='ml-3'>
             <li>High School Diploma</li>
             <li>Certificate in Programming</li>
-            <li>Associate's in I.T.</li>
+            <li>Associate of Applied Science in Information Technology</li>
+            <li>Bachelor of Science in Computer Science (In Progress)</li>
           </ul>
         </div>
       </main>
@@ -33,10 +34,10 @@ function App() {
       <footer className='bg-blue-400 p-4 mt-6 text-center rounded-lg'>
         <p className='font-bold'>Contact Info:</p>
         <ul className='flex flex-wrap gap-3 ml-2 text-sm'>
-          <li>Email: <a href="mailto:joshua.birchfield32@gmail.com" className='text-purple-900'>joshua.birchfield32@gmail.com</a></li>
-          <li>Phone Number: (479) 530 - 9156</li>
-          <li>X: <a href="https://x.com/JBirchfield32"className='text-purple-900'>Joshua Birchfield</a></li>
-          <li>LinkedIn: <a href="https://www.linkedin.com/in/joshua-birchfield-b13304295"className='text-purple-900'>Joshua Birchfield</a></li>
+          <li>Email: <a href="mailto:joshua.birchfield32@gmail.com" className='text-pink-600'>joshua.birchfield32@gmail.com</a></li>
+          <li>Phone Number: (479)530-9156</li>
+          <li>X: <a href="https://x.com/JBirchfield32"className='text-pink-600'>Joshua Birchfield</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/joshua-birchfield-b13304295"className='text-pink-600'>Joshua Birchfield</a></li>
         </ul>
       </footer>
     </div>
