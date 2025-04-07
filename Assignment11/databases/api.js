@@ -1,7 +1,7 @@
-const express = require('express');
+import express from 'express';
 const router = express.Router();
 
-router.get('/personalinfo', async (req, res) => {
+router.get('/personal', async (req, res) => {
   const db = req.app.locals.personalDB;
   const result = await db.query('SELECT * FROM details');
   res.json(result.rows);
@@ -13,4 +13,4 @@ router.get('/hobbies', async (req, res) => {
   res.json(result.rows);
 });
 
-module.exports = router;
+export default router;

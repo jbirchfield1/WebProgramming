@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Personal from './pages/PersonalInfo';
+import PersonalInfo from './pages/PersonalInfo';
 import Hobbies from './pages/Hobbies';
 
 
