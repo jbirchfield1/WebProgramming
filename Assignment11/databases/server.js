@@ -27,8 +27,10 @@ const hobbiesPool = new Pool({  host: process.env.DB_HOST,
 app.locals.personalDB = personalPool;
 app.locals.hobbiesDB = hobbiesPool;
 
+//Mounting routs
 app.use('/api', apiRoutes);
 
+//Starting Server
 const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);

@@ -10,10 +10,12 @@ import Hobbies from './pages/Hobbies';
 export default function App() {
   return (
     <div>
+      
       <nav>
         <Link to="/" class="navLink">Personal Info</Link>
         <Link to="/hobbies" class="navLink">Hobbies</Link>
       </nav>
+      
       <Routes>
         <Route path="/" element={<PersonalInfo />} />
         <Route path="/hobbies" element={<Hobbies />} />

@@ -1,6 +1,7 @@
 import express from 'express';
 const router = express.Router();
 
+//GETting information form database
 router.get('/personalinfo', async (req, res) => {
   const db = req.app.locals.personalDB;
   const result = await db.query('SELECT * FROM details');
@@ -13,4 +14,5 @@ router.get('/hobbies', async (req, res) => {
   res.json(result.rows);
 });
 
+//exporting routes
 export default router;
