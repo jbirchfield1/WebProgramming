@@ -16,7 +16,7 @@ export default function Hobbies() {
       <ul>
         {hobbies.map((h) => (
           <li key={h.id}>
-            <strong>{h.title}</strong>: {h.description}
+            <h3>{h.title}</h3> {h.description}
           </li>
         ))}
       </ul>

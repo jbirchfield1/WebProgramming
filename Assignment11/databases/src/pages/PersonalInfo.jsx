@@ -15,7 +15,7 @@ export default function Personal() {
       <h2>Personal Info</h2>
       <ul>
         {info.map((p) => (
-          <li key={p.id}>{p.name} - {p.age} - {p.email}</li>
+          <li key={p.id}>Name: {p.name} <br/> Age: {p.age} <br/> Email: {p.email}</li>
         ))}
       </ul>
     </div>
