@@ -7,7 +7,7 @@ export default function Hobbies() {
   useEffect(() => {
     axios.get('http://localhost:3000/api/hobbies')
       .then(res => setHobbies(res.data))
-      .catch(err => console.error(err));
+      .catch(err => console.error("Error fetching Hobbies:", err));
   }, []);
 
   return (

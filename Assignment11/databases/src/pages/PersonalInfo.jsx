@@ -7,7 +7,7 @@ export default function Personal() {
   useEffect(() => {
     axios.get('http://localhost:3000/api/personalinfo')
       .then(res => setInfo(res.data))
-      .catch(err => console.error(err));
+      .catch(err => console.error("Error fetching Personal Info:", err));
   }, []);
 
   return (
