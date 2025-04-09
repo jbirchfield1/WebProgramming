@@ -11,8 +11,8 @@ export default function App() {
   return (
     <div>
       <nav>
-        <Link to="/">Personal Info</Link> | 
-        <Link to="/hobbies">Hobbies</Link>
+        <Link to="/" class="navLink">Personal Info</Link>
+        <Link to="/hobbies" class="navLink">Hobbies</Link>
       </nav>
       <Routes>
         <Route path="/" element={<PersonalInfo />} />
