@@ -41,19 +41,19 @@ function App(){
         placeholder="Post Body"
         value = {form.body}
         onChange={handleChange}
-        style={{width:'100%', padding:'10px', heigh:'10px', marginBotton:'10px'}}/>
+        style={{width:'100%', padding:'10px', height:'10px', marginBottom:'10px'}}/>
 
         <button type="submit" style={{padding: '10px 20px'}}>Submit Post</button>
       </form>
 
       <h2>Blog Posts</h2>
 
-      {posts.map(posts => {
+      {posts.map(post => (
         <div key={post.id} style={{border: '1px solid #ccc', padding:'10px', marginBottom:'15px'}}>
           <h3>{post.title}</h3>
           <p>{post.body}</p>
           </div>
-      })}
+      ))}
     </div>
   )
 }
