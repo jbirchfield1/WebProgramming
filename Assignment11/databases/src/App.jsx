@@ -9,8 +9,8 @@ import Hobbies from './pages/Hobbies';
 
 export default function App() {
   return (
+    <Router>
     <div>
-      
       <nav>
         <Link to="/" class="navLink">Personal Info</Link>
         <Link to="/hobbies" class="navLink">Hobbies</Link>
@@ -21,5 +21,6 @@ export default function App() {
         <Route path="/hobbies" element={<Hobbies />} />
       </Routes>
     </div>
+    </Router>
   );
 }
