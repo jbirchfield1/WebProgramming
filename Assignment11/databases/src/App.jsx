@@ -12,8 +12,8 @@ export default function App() {
     <Router>
     <div>
       <nav>
-        <Link to="/" class="navLink">Personal Info</Link>
-        <Link to="/hobbies" class="navLink">Hobbies</Link>
+        <Link to="/" className="navLink">Personal Info</Link>
+        <Link to="/hobbies" className="navLink">Hobbies</Link>
       </nav>
       
       <Routes>
