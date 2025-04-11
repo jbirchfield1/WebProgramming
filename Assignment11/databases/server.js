@@ -27,7 +27,7 @@ const hobbiesPool = new Pool({  host: process.env.DB_HOST,
 app.locals.personalDB = personalPool;
 app.locals.hobbiesDB = hobbiesPool;
 
-//Mounting routs
+//Mounting routes
 app.use('/api', apiRoutes);
 
 //Starting Server
