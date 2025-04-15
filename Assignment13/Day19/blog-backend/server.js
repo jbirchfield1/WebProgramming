@@ -62,7 +62,7 @@ app.delete('/posts/:id', async (req, res) => {
 
 app.put('/posts/:id', async (req, res) =>{
     try{
-        const updated = await Post.findByIdAndUpdate(re.params.id);
+        const updated = await Post.findByIdAndUpdate(req.params.id, req.body);
         res.status(200).send("Post Updated");
     } catch(err){
         res.status(500).send("Error updating post");
