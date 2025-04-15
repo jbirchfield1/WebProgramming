@@ -50,6 +50,25 @@ app.post('/posts', async (req, res) => {
     }
 });
 
+app.delete('/posts/:id', async (req, res) => {
+    try {
+      const deleted = await Post.findByIdAndDelete(req.params.id);
+      if (!deleted) return res.status(404).send("Post not found");
+      res.status(200).send("Post deleted");
+    } catch (err) {
+      res.status(500).send("Error deleting post");
+    }
+  });
+
+app.put('/posts/:id', async (req, res) =>{
+    try{
+        const updated = await Post.findByIdAndUpdate(re.params.id);
+        res.status(200).send("Post Updated");
+    } catch(err){
+        res.status(500).send("Error updating post");
+    }
+})
+
 //start server
 
 app.listen(PORT, ()=>{

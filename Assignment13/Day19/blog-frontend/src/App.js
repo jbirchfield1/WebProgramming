@@ -25,6 +25,23 @@ function App(){
     .catch(err=>console.error("Error submitting the post:", err));
   };
 
+  const handleDelete = (_id) => {
+
+    axios.delete(`http://localhost:5000/posts/${_id}`)
+      .then(() => {
+        setPosts(posts.filter(post => post._id !== _id));
+      })
+      .catch(err => console.error("Error deleting the post:", err));
+  };
+
+  const handleUpdate = (_id) => {
+    axios.put(`http://localhost:5000/posts/${_id}`)
+    .then(() =>{
+        
+    })
+    .catch(err => console.error("Error updating the post:", err))
+  }
+
   return(
     <div style={{padding:'20px', maxWidth:'600px', margin:'auto'}}>
       <h2>Create a Blog Post</h2>
@@ -49,9 +66,13 @@ function App(){
       <h2>Blog Posts</h2>
 
       {posts.map(post => (
-        <div key={post.id} style={{border: '1px solid #ccc', padding:'10px', marginBottom:'15px'}}>
+        <div key={post._id} style={{border: '1px solid #ccc', padding:'10px', marginBottom:'15px'}}>
           <h3>{post.title}</h3>
           <p>{post.body}</p>
+          <button 
+            onClick={() => handleDelete(post._id)} style={{padding: '5px 10px', backgroundColor: 'red', color: 'white', border: 'none'}}>
+            Delete
+          </button>
           </div>
       ))}
     </div>
