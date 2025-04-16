@@ -1,12 +1,12 @@
 Getting Started:
-1. clone or download the code within the file
+1. clone or download the code within the "Assignment13" file
 2. download dependencies by running npm install in the integrated terminal
-3. create a database in MongoDB called blogDB with a collection called posts
+3. create a database in MongoDB called "blogDB" with a collection called "posts"
 4. To cause the app to run simply use node or nodemon to run the server.js file in integrated folder for the backend folder, then run the app by running npm start within the integrated terminal for the frontend folder. 
 5. Once the app is running, click the url within the integrated terminal for the frontend folder.
 
 Video of working website:
 
 Features added:
--Ability to delete posts by clicking delete button on shown post
--Ability to update posts by clicking update button on a shown post. After button is clicked the post information will be shown in the form, and can be altered and saved.
+-Ability to delete posts by clicking delete button on displayed post
+-Ability to update posts by clicking update button on a displayed post
