@@ -65,11 +65,7 @@ app.delete('/posts/:id', async (req, res) => {
     const { title, body } = req.body;
   
     try {
-      const updatedPost = await Post.findByIdAndUpdate(
-        id,
-        { title, body },
-        { new: true }
-      );
+      const updatedPost = await Post.findByIdAndUpdate(id, { title, body }, { new: true });
   
       res.json(updatedPost);
     } catch (err) {
