@@ -76,11 +76,10 @@ function App(){
             onClick={() => handleDelete(post._id)} style={{padding: '5px 10px', backgroundColor: 'red', color: 'white', border: 'none'}}>
             Delete
           </button>
-          <button onClick={() => {
-    setForm({ title: post.title, body: post.body }); 
-    setEditingId(post._id);
-    }} 
-  style={{ padding: '5px 10px', marginLeft: '10px' }}> Edit </button>
+          <button 
+            onClick={() => {setForm({ title: post.title, body: post.body }); setEditingId(post._id);}} 
+            style={{ padding: '5px 10px', marginLeft: '10px' }}> Edit 
+          </button>
           </div>
       ))}
     </div>
