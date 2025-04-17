@@ -8,3 +8,6 @@ Getting Started:
 Features added:
 -Ability to delete posts by clicking delete button on a displayed post
 -Ability to update posts by clicking update button on a displayed post. After clicking the update button, the post appears in form and can be edited
+
+Short Video Showcase:
+https://github.com/user-attachments/assets/d2937dfa-3cfc-4b54-bf86-cf10277b8431
