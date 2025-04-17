@@ -61,8 +61,8 @@ app.delete('/posts/:id', async (req, res) => {
   });
 
   app.put('/posts/:id', async (req, res) => {
-    const { id } = req.params;
-    const { title, body } = req.body;
+    const {id} = req.params;
+    const {title, body} = req.body;
   
     try {
       const updatedPost = await Post.findByIdAndUpdate(id, { title, body }, { new: true });

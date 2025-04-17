@@ -5,8 +5,6 @@ Getting Started:
 4. To cause the app to run simply use node or nodemon to run the server.js file in integrated folder for the backend folder, then run the app by running npm start within the integrated terminal for the frontend folder. 
 5. Once the app is running, click the url within the integrated terminal for the frontend folder.
 
-Video of working website:
-
 Features added:
--Ability to delete posts by clicking delete button on displayed post
--Ability to update posts by clicking update button on a displayed post
+-Ability to delete posts by clicking delete button on a displayed post
+-Ability to update posts by clicking update button on a displayed post. After clicking the update button, the post appears in form and can be edited
